@@ -5,17 +5,16 @@ import './Header.css';
 import SearchBar from '../SearchBar/SearchBar';
 
 const Header = () => {
-
     const [menuData, setMenuData] = useState(null);
 
     useEffect(() => {
-        fetch("/JSON/Header.json")
+        fetch("/JSON/Components/Header.json")
         .then((response) => response.json())
         .then((data) => setMenuData(data))
         .catch((error) => console.error("Error loading menu data:", error));
     }, []);
 
-    if (!menuData) return <p>Loading menu...</p>;
+    if (!menuData) return <p>Cargando menu principal</p>;
 
     return(
         <header>

@@ -1,0 +1,131 @@
+{
+    "Categories":[
+        {
+            "id": 1,
+            "category": "Colchones",
+            "head-title": "Colchones | Kamas",
+            "route": "/productos/colchones/",
+            "SubCategories":[
+                {
+                    "id": 1,
+                    "SubCategory": "Adel",
+                    "head-title": "Colchones - Adel | Kamas",
+                    "route": "/productos/colchones/adel/"
+                },
+                {
+                    "id": 2,
+                    "SubCategory": "Rucay",
+                    "head-title": "Colchones - Rucay | Kamas",
+                    "route": "/productos/colchones/rucay/"
+                },
+                {
+                    "id": 3,
+                    "SubCategory": "Sarki",
+                    "head-title": "Colchones - Sarki | Kamas",
+                    "route": "/productos/colchones/sarki/"
+                },
+                {
+                    "id": 4,
+                    "SubCategory": "Safynnte",
+                    "head-title": "Colchones - Safynnte | Kamas",
+                    "route": "/productos/colchones/safynnte/"
+                },
+                {
+                    "id": 5,
+                    "SubCategory": "Der Prinz",
+                    "head-title": "Colchones - Der Prinz | Kamas",
+                    "route": "/productos/colchones/der-prinz/"
+                },
+                {
+                    "id": 6,
+                    "SubCategory": "Thameo pocket",
+                    "head-title": "Colchones - Thameo pocket | Kamas",
+                    "route": "/productos/colchones/thameo-pocket/"
+                },
+                {
+                    "id": 7,
+                    "SubCategory": "Ramat",
+                    "head-title": "Colchones - Ramat | Kamas",
+                    "route": "/productos/colchones/ramat/"
+                },
+                {
+                    "id": 8,
+                    "SubCategory": "Nesie",
+                    "head-title": "Colchones - Nesie | Kamas",
+                    "route": "/productos/colchones/nesie/"
+                },
+                {
+                    "id": 9,
+                    "SubCategory": "Norole",
+                    "head-title": "Colchones - Norole | Kamas",
+                    "route": "/productos/colchones/norole/"
+                },
+                {
+                    "id": 10,
+                    "SubCategory": "Thaleo",
+                    "head-title": "Colchones - Thaleo | Kamas",
+                    "route": "/productos/colchones/thaleo/"
+                },
+                {
+                    "id": 11,
+                    "SubCategory": "Konig",
+                    "head-title": "Colchones - Konig | Kamas",
+                    "route": "/productos/colchones/konig/"
+                },
+                {
+                    "id": 12,
+                    "SubCategory": "Yurmale",
+                    "head-title": "Colchones - Yurmale | Kamas",
+                    "route": "/productos/colchones/yurmale/"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "category": "Cama box tarimas",
+            "head-title": "Cama box tarimas | Kamas",
+            "route": "/productos/cama-box-tarimas/"
+        },
+        {
+            "id": 3,
+            "category": "Dormitorios",
+            "head-title": "Dormitorios | Kamas",
+            "route": "/productos/dormitorios/"
+        }
+        ,
+        {
+            "id": 4,
+            "category": "Camas funcionales",
+            "head-title": "Camas funcionales | Kamas",
+            "route": "/productos/camas-funcionales/"
+        }
+        ,
+        {
+            "id": 5,
+            "category": "Cabeceras",
+            "head-title": "Cabeceras | Kamas",
+            "route": "/productos/cabeceras/"
+        }
+        ,
+        {
+            "id": 6,
+            "category": "Sofas",
+            "head-title": "Sofas | Kamas",
+            "route": "/productos/sofas/"
+        }
+        ,
+        {
+            "id": 7,
+            "category": "Complementos",
+            "head-title": "Complementos | Kamas",
+            "route": "/productos/complementos/"
+        }
+        ,
+        {
+            "id": 8,
+            "category": "Ofertas",
+            "head-title": "Ofertas | Kamas",
+            "route": "/productos/ofertas/"
+        }
+    ]
+}
