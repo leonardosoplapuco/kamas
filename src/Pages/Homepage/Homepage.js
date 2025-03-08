@@ -12,25 +12,17 @@ function Homepage(){
                 <div className='homepage-hero-container'>
                     <section className='homepage-hero'>
                         <div className='homepage-hero-slider-container'>
-                            <div className='homepage-hero-slider-content'>
-                                <ul className='homepage-hero-slider'>
-                                    <li>
-                                        <a href="/">
-                                            <img src="/assets/images/homepage/slider/1.jpg" alt=""/>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/">
-                                            <img src="/assets/images/homepage/slider/2.jpg" alt=""/>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/">
-                                            <img src="/assets/images/homepage/slider/3.jpg" alt=""/>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <ul className='homepage-hero-slider'>
+                                <li>
+                                    <img src="/assets/images/homepage/slider/1.jpg" alt=""/>
+                                </li>
+                                <li>
+                                    <img src="/assets/images/homepage/slider/2.jpg" alt=""/>
+                                </li>
+                                <li>
+                                    <img src="/assets/images/homepage/slider/3.jpg" alt=""/>
+                                </li>
+                            </ul>
                         </div>
 
                         <button type="button" className='homepage-hero-slider-button homepage-hero-slider-button-left'>
@@ -65,6 +57,8 @@ function Homepage(){
                         </div>
                     </section>
                 </div>
+                <a href="/productos/colchones/" title="">Colchones</a>
+                <br/>
                 <a href="/pagina-de-contenido-1" title="">Página de contenido 1</a>
             </main>
 
