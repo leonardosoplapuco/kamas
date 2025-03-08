@@ -1,0 +1,68 @@
+{
+    "MenuLinks":[
+        {
+            "id": 1,
+            "href": "/productos/colchones/",
+            "icon": "king_bed",
+            "img-icon": "king_bed",
+            "img-icon-alt": "king_bed",
+            "category": "Colchones"
+        },
+        {
+            "id": 2,
+            "href": "/productos/cama-box-tarimas/",
+            "icon": "king_bed",
+            "img-icon": "king_bed",
+            "img-icon-alt": "king_bed",
+            "category": "Cama box tarima"
+        },
+        {
+            "id": 3,
+            "href": "/productos/dormitorios/",
+            "icon": "king_bed",
+            "img-icon": "king_bed",
+            "img-icon-alt": "king_bed",
+            "category": "Dormitorios"
+        },
+        {
+            "id": 4,
+            "href": "/productos/camas-funcionales/",
+            "icon": "king_bed",
+            "img-icon": "king_bed",
+            "img-icon-alt": "king_bed",
+            "category": "Camas funcionales"
+        },
+        {
+            "id": 5,
+            "href": "/productos/cabeceras/",
+            "icon": "king_bed",
+            "img-icon": "king_bed",
+            "img-icon-alt": "king_bed",
+            "category": "Cabeceras"
+        },
+        {
+            "id": 6,
+            "href": "/productos/sofas/",
+            "icon": "chair",
+            "img-icon": "king_bed",
+            "img-icon-alt": "king_bed",
+            "category": "Sofas"
+        },
+        {
+            "id": 7,
+            "href": "/productos/complementos/",
+            "icon": "king_bed",
+            "img-icon": "king_bed",
+            "img-icon-alt": "king_bed",
+            "category": "Complementos"
+        },
+        {
+            "id": 8,
+            "href": "/ofertas/",
+            "icon": "sell",
+            "img-icon": "king_bed",
+            "img-icon-alt": "king_bed",
+            "category": "Ofertas"
+        }
+    ]
+}
