@@ -1,0 +1,133 @@
+header{
+    width: 100%;
+}
+
+.header-banner-container{
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    background: var(--color-2);
+}
+
+.header-banner{
+    margin: auto;
+    width: 100%;
+    height: 36px;
+    max-width: var(--container-mx-width);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header-banner > p,
+.header-banner > a > p{
+    font-size: 15px;
+    color: var(--white);
+}
+
+.header-banner > a{
+    color: var(--white);
+}
+
+/**/
+
+.header-bottom-container{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+}
+
+.header-bottom{
+    margin: auto;
+    width: 100%;
+    max-width: var(--container-mx-width);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 40px;
+}
+
+.header-bottom img{
+    width: auto;
+    height: 50px;
+    object-fit: contain;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.menu-link{
+    width: auto;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: var(--t-200ms);
+    position: relative;
+}
+
+.menu-link:hover{
+    padding: 0 10px;
+    background: var(--color-1);
+    border-radius: 4px;
+}
+
+.menu-link span,
+.menu-link h2{
+    color: var(--black);
+    transition: var(--t-200ms);
+}
+
+.menu-link:hover h2{
+    color: var(--white);
+}
+
+.menu-link span{
+    position: absolute;
+    left: -34px;
+    top: 50%;
+    translate: 0 -50%;
+    color: var(--white);
+}
+
+.menu-link:hover span{
+    left: 10px;
+}
+
+.menu-link:hover h2{
+    margin-left: 30px;
+}
+
+.menu-link-8{
+    gap: 5px;
+}
+
+.menu-link-8:hover{
+    padding: 0 10px;
+    background: rgba(220 20 60 / 0.25);
+}
+
+.menu-link-8 span,
+.menu-link-8 h2{
+    color: var(--red);
+}
+
+.menu-link-8 span{
+    position: unset;
+    left: unset;
+    top: unset;
+    translate: unset;
+}
+
+.menu-link-8:hover h2{
+    margin-left: unset;
+    color: var(--red);
+}
+
+/**/

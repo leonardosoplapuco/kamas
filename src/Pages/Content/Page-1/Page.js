@@ -7,7 +7,9 @@ function Page1(){
                 <title>Página de contenido 12</title>
             </Helmet>
 
-            <h1>Página de contenido 1</h1>
+            <h1>Página de contenido 1 como </h1>
+
+            <a href="/">Regresar al inicio</a>
         </>
     );
 }
