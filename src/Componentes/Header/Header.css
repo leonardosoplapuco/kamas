@@ -29,6 +29,7 @@ header{
 .header-banner > a > p{
     font-size: 15px;
     color: var(--white);
+    text-align: center;
 }
 
 .header-banner > a{
@@ -97,7 +98,7 @@ header{
 
 .menu-link span,
 .menu-link h2{
-    color: var(--black);
+    color: var(--black-3);
     transition: var(--t-200ms);
 }
 
@@ -134,7 +135,8 @@ header{
 
 .menu-link-8:hover{
     padding: 0 10px;
-    background: rgba(220 20 60 / 0.15);
+    background: rgba(220 20 60 / 0.1);
+    border: 1px solid var(--red);
 }
 
 .menu-link-8 span,
@@ -180,7 +182,7 @@ header{
     pointer-events: unset;
     user-select: unset;
     
-    box-shadow: 0 5px 5px rgba(0 0 0 / 0.1);
+    box-shadow: 0 5px 5px rgba(0 0 0 / 0.25);
 }
 
 .submenu{
@@ -250,6 +252,10 @@ header{
     color: var(--white);
 }
 
+.menu-button{
+    display: none;
+}
+
 /**/
 
 @media screen and (max-width: 600px){
@@ -278,7 +284,7 @@ header{
     }
     .menu-link{
         width: 100%;
-        height: 48px;
+        height: 56px;
         position: relative;
         display: flex;
         align-items: center;
@@ -342,5 +348,15 @@ header{
     .submenu-target-2 ul{
         display: flex;
         flex-wrap: wrap;
+    }
+    .menu-link-8{
+        background: rgba(220 20 60 / 0.1);
+    }
+    .menu-link-8::before{
+        display: none;
+    }
+
+    .menu-button{
+        display: flex;
     }
 }
