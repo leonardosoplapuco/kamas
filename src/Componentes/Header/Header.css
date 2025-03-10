@@ -39,7 +39,8 @@ header{
 
 .header-bottom-container{
     width: 100%;
-    padding: 10px 20px;
+    height: 70px;
+    padding: 0 20px;
     display: flex;
 }
 
@@ -169,8 +170,6 @@ header{
     background: var(--header);
     transition: var(--t-200ms);
 
-    box-shadow: 0 5px 5px rgba(0 0 0 / 0.1);
-
     opacity: 0;
     pointer-events: none;
     user-select: none;
@@ -180,6 +179,8 @@ header{
     opacity: 1;
     pointer-events: unset;
     user-select: unset;
+    
+    box-shadow: 0 5px 5px rgba(0 0 0 / 0.1);
 }
 
 .submenu{
@@ -247,4 +248,99 @@ header{
 
 .submenu ul li:nth-last-child(1) a h3{
     color: var(--white);
+}
+
+/**/
+
+@media screen and (max-width: 600px){
+    .header-logo{
+        height: 40px;
+    }
+    .menu-container{
+        position: fixed;
+        left: 0;
+        top: 106px;
+        width: 100%;
+        height: calc(100vh - 106px);
+        overflow-y: auto;
+        background: var(--header);
+    }
+    .menu-container::-webkit-scrollbar{
+        display: none;
+    }
+    .menu{
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+    }
+    .menu > li{
+        width: 100%;
+    }
+    .menu-link{
+        width: 100%;
+        height: 48px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 10px;
+        padding: 0 20px;
+        border: 0;
+        border-radius: 0;
+    }
+    .menu-link:hover{
+        padding: 0 20px;
+        border: 0;
+        background: rgba(0 0 0 / 0.05);
+    }
+    .menu-link.active,
+    .menu-link.active:hover,
+    .menu-link.active:hover{
+        padding: 0 20px;
+        background: var(--color-1);
+    }
+    .menu-link:hover h2,
+    .menu-link.active h2{
+        margin-left: unset;
+    }
+    .menu-link span{
+        position: unset;
+        left: unset;
+        top: unset;
+        translate: 0 0;
+    }
+    .menu-link::before{
+        content: '>';
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        translate: 0 -50%;
+        rotate: 90deg;
+    }
+    .submenu-container{
+        position: unset;
+        left: 0;
+        top: 0;
+        height: 0;
+        padding: 0 20px;
+        overflow: hidden;
+
+        opacity: 1;
+        pointer-events: unset;
+        user-select: unset;
+    }
+    .submenu-container.active{
+        height: auto;
+        padding: 20px;
+        interpolate-size: allow-keywords;
+        box-shadow: none;
+    }
+    .submenu{
+        display: flex;
+        flex-direction: column;
+    }
+    .submenu-target-2 ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
