@@ -30,6 +30,8 @@ html{
 
     --white: #FFFFFF;
 
+    --header: #FFFFFF;
+
     --text: #555555;
 
     --t-100ms: all 100ms linear;
@@ -76,4 +78,11 @@ button{
     border: 0;
     outline: 0;
     background: transparent;
+}
+
+/**/
+
+.text{
+    color: var(--text);
+    transition: var(--t-200ms);
 }

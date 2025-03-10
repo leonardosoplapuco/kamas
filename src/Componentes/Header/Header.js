@@ -6,13 +6,18 @@ import SearchBar from '../SearchBar/SearchBar';
 
 const Header = () => {
     const [menuData, setMenuData] = useState(null);
+    const [activeMenu, setActiveMenu] = useState(null);
 
     useEffect(() => {
-        fetch("/JSON/Components/Header.json")
+        fetch("/JSON/Categories.json")
         .then((response) => response.json())
         .then((data) => setMenuData(data))
         .catch((error) => console.error("Error loading menu data:", error));
     }, []);
+
+    const handleMenuClick = (id) => {
+        setActiveMenu(prev => (prev === id ? null : id));
+    };
 
     if (!menuData) return <p>Cargando menu principal</p>;
 
@@ -21,27 +26,59 @@ const Header = () => {
             <div className='header-banner-container'>
                 <div className='header-banner'>
                     <p>Hacemos envíos a todo el Perú por la agencia de tu preferencia. 🚚</p>
-                    {/* <a href="/"><p>Click aquí</p></a> */}
                 </div>
             </div>
 
             <div className='header-bottom-container'>
                 <div className='header-bottom'>
-                    <img src="https://www.kamas.pe/img/logo-principal-kamas.webp" alt=""/>
+                    <a href="/" className="header-logo">
+                        <img src="https://www.kamas.pe/img/logo-principal-kamas.webp" alt="Kamas"/>
+                    </a>
 
                     <nav className="menu-container">
                         <ul className="menu">
-                            {menuData.MenuLinks.map((item) => (
+                            {menuData.Categories.map((item) => (
                                 <li key={item.id}>
-                                    {/* <a href={item.href} className={`menu-link menu-link-${item.id}`}>
-                                        <span className="material-icons">{item.icon}</span>
-                                        <h2>{item.category}</h2>
-                                    </a> */}
+                                    {item.id === 8 ? (
+                                        <a href={item.route} className={`menu-link menu-link-${item.id}`}>
+                                            <span className="material-icons">{item.icon}</span>
+                                            <h2>{item.category}</h2>
+                                        </a>
+                                    ) : (
+                                        <button type="button" className={`menu-link menu-link-${item.id} ${activeMenu === item.id ? 'active' : ''}`} onClick={() => handleMenuClick(item.id)}>
+                                            <span className="material-icons">{item.icon}</span>
+                                            <h2>{item.category}</h2>
+                                        </button>
+                                    )}
+                                    
+                                    {item.subCategories && (
+                                        <div className={`submenu-container submenu-container-${item.id} ${activeMenu === item.id ? 'active' : ''}`}>
+                                            <div className="submenu">
+                                                <p className="submenu-title">{item.category}</p>
 
-                                    <button type="button" className={`menu-link menu-link-${item.id}`}>
-                                        <span className="material-icons">{item.icon}</span>
-                                        <h2>{item.category}</h2>
-                                    </button>
+                                                <div className="submenu-target submenu-target-1">
+                                                    <p className="text">{item.menuMessage?.[0]?.text}</p>
+                                                </div>
+
+                                                <div className="submenu-target submenu-target-2">
+                                                    <p className="submenu-target-title">{item.subCategoriesTitle?.[0]?.text}</p>
+                                                    <ul>
+                                                        {item.subCategories.map((sub) => (
+                                                            <li key={sub.id}>
+                                                                <a href={sub.route} alt={sub.headTitle} title={sub.headTitle}>
+                                                                    <h3>{sub.subCategory}</h3>
+                                                                </a>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+
+                                                <div className="submenu-target submenu-target-3">
+                                                    <img src={item.menuImg?.[0]?.imgSrc} alt={item.menuImg?.[0]?.imgAlt} />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )}
                                 </li>
                             ))}
                         </ul>
