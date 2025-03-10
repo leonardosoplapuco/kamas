@@ -116,7 +116,7 @@
             ],
             "subCategoriesTitle":[
                 {
-                    "text": "leoleoleoleo"
+                    "text": "Línea"
                 }
             ],
             "subCategories":[
@@ -143,6 +143,12 @@
                     "subCategory": "Europeos con cajones",
                     "headTitle": "Cama box tarimas - Europeos con cajones | Kamas",
                     "route": "/productos/cama-box-tarimas/europeos-con-cajones/"
+                },
+                {
+                    "id": 5,
+                    "subCategory": "Ver todos",
+                    "headTitle": "Cama box tarimas | Kamas",
+                    "route": "/productos/cama-box-tarimas/"
                 }
             ],
             "menuImg":[
