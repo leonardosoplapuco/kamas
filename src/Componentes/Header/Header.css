@@ -17,7 +17,7 @@ header{
 .header-banner{
     margin: auto;
     width: 100%;
-    height: 36px;
+    height: 40px;
     max-width: var(--container-mx-width);
     display: flex;
     align-items: center;
@@ -40,7 +40,7 @@ header{
 
 .header-bottom-container{
     width: 100%;
-    height: 70px;
+    height: 80px;
     padding: 0 20px;
     display: flex;
 }
@@ -181,8 +181,8 @@ header{
     opacity: 1;
     pointer-events: unset;
     user-select: unset;
-    
-    box-shadow: 0 5px 5px rgba(0 0 0 / 0.25);
+
+    box-shadow: 0 2.5px 5px rgba(0 0 0 / 0.15);
 }
 
 .submenu{
@@ -259,13 +259,19 @@ header{
 /**/
 
 @media screen and (max-width: 600px){
+    .header-banner{
+        height: 50px;
+    }
+    .header-bottom-container{
+        height: 70px;
+    }
     .header-logo{
         height: 40px;
     }
     .menu-container{
         position: fixed;
         left: 0;
-        top: 106px;
+        top: 120px;
         width: 100%;
         height: calc(100vh - 106px);
         overflow-y: auto;

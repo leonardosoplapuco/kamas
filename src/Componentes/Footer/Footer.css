@@ -1,0 +1,13 @@
+footer{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    background: var(--color-1);
+}
+
+.footer{
+    margin: auto;
+    width: 100%;
+    max-width: var(--content-mx-width);
+    color: var(--white);
+}
