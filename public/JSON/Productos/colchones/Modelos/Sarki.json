@@ -1,0 +1,44 @@
+{
+    "productos":[
+        {
+            "id": 1,
+            "categoria": "Colchones",
+            "ruta": "/productos/colchones/sarki/1-plaza-y-media",
+            "nombre": "Colchón kamas sarki 1 plaza y media",
+            "tamaño": "1 plaza y media",
+            "fotos": "/assets/images/productos/colchones/sarki/1-plaza-y-media/",
+            "precio": 500,
+            "stock": 99,
+            "sku": "K1153CN10"
+        },
+        {
+            "id": 2,
+            "categoria": "Colchones",
+            "ruta": "/productos/colchones/sarki/2-plazas",
+            "tamaño": "2 plazas",
+            "nombre": "Colchón kamas sarki 2 plazas",
+            "fotos": "/assets/images/productos/colchones/sarki/2-plazas/",
+            "precio": 500,
+            "stock": 99,
+            "sku": "K123CN10"
+        }
+    ],
+    "descripcion":[
+        {
+            "uno": "Garantía de 2 años.",
+            "dos": "9 filas de resortes.",
+            "tres": "Tela algodón tejido en punto.",
+            "cuatro": "Espuma de alta densidad 18kg/m3.",
+            "cinco": "Uso de ambos lados.",
+            "seis": "Soporte de 65kg. por persona."
+        }
+    ],
+    "detallesDelProducto":[
+        {
+            "modeloColhon": "Sarki",
+            "lineaColchones": "Ortopédico",
+            "nivelDeConfort": "Confortable",
+            "tipoDeResorte": "Bonell"
+        }
+    ]
+}
