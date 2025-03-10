@@ -54,9 +54,8 @@ const Header = () => {
                                     {item.subCategories && (
                                         <div className={`submenu-container submenu-container-${item.id} ${activeMenu === item.id ? 'active' : ''}`}>
                                             <div className="submenu">
-                                                <p className="submenu-title">{item.category}</p>
-
                                                 <div className="submenu-target submenu-target-1">
+                                                    <p className="submenu-target-title">{item.category}</p>
                                                     <p className="text">{item.menuMessage?.[0]?.text}</p>
                                                 </div>
 
