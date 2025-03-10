@@ -5,7 +5,7 @@ import Homepage from './Pages/Homepage/Homepage';
 // import Layout from "./Pages/Content/Layout";
 // import Page1 from './Pages/Content/Page-1/Page';
 
-import Layout from "./Pages/Products/Layout";
+import Layout from "./Pages/Categories/Layout";
 
 import Page404 from './Pages/Page404/Page404';
 
