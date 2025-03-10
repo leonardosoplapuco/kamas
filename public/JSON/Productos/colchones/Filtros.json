@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Lína de colchones",
+        "list":[
+            {
+                "id": 1,
+                "name": "Semi ortopédicos"
+            },
+            {
+                "id": 2,
+                "name": "Anatómicos"
+            },
+            {
+                "id": 3,
+                "name": "Ortopédicos"
+            },
+            {
+                "id": 4,
+                "name": "Super ortopédicos"
+            },
+            {
+                "id": 5,
+                "name": "Hoteleros"
+            },
+            {
+                "id": 6,
+                "name": "Extra ortopédicos"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Nivel de confort",
+        "list":[
+            {
+                "id": 1,
+                "name": "Confortable"
+            },
+            {
+                "id": 2,
+                "name": "Intermedio"
+            },
+            {
+                "id": 3,
+                "name": "Muy confortable"
+            },
+            {
+                "id": 4,
+                "name": "Firme"
+            },
+            {
+                "id": 5,
+                "name": "Muy firme"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Tipo de resorte",
+        "list":[
+            {
+                "id": 1,
+                "name": "Bonell"
+            },
+            {
+                "id": 2,
+                "name": "Pocket"
+            }
+        ]
+    }
+]

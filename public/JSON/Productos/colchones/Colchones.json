@@ -1,0 +1,46 @@
+[
+    {
+        "id": "1",
+        "categoria": "Colchones",
+        "ruta": "/productos/colchones/adel/1-plaza-y-media",
+        "nombre": "Colchón kamas adel 1 plaza y media",
+        "tamaño": "1 plaza y media",
+        "fotos": "/assets/images/productos/colchones/adel/1-plaza-y-media/",
+        "precio": 500,
+        "stock": 99,
+        "sku": "K111CN10"
+    },
+    {
+        "id": "2",
+        "categoria": "Colchones",
+        "ruta": "/productos/colchones/adel/2-plazas",
+        "tamaño": "2 plazas",
+        "nombre": "Colchón kamas adel 2 plazas",
+        "fotos": "/assets/images/productos/colchones/adel/2-plazas/",
+        "precio": 500,
+        "stock": 99,
+        "sku": "K111CN11"
+    },
+    {
+        "id": "3",
+        "categoria": "Colchones",
+        "ruta": "/productos/colchones/adel/queen",
+        "tamaño": "Queen",
+        "nombre": "Colchón kamas adel queen",
+        "fotos": "/assets/images/productos/colchones/adel/queen/",
+        "precio": 500,
+        "stock": 99,
+        "sku": "K111CN12"
+    },
+    {
+        "id": "4",
+        "categoria": "Colchones",
+        "ruta": "/productos/colchones/adel/king",
+        "tamaño": "King",
+        "nombre": "Colchón kamas adel king",
+        "fotos": "/assets/images/productos/colchones/adel/king/",
+        "precio": 500,
+        "stock": 99,
+        "sku": "K111CN13"
+    }
+]
