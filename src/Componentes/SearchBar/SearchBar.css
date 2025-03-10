@@ -46,3 +46,9 @@
 .search-bar-container > div span{
     color: gray;
 }
+
+@media screen and (max-width: 600px){
+    .search-bar-container{
+        max-width: 240px;
+    }
+}

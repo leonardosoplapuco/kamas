@@ -84,6 +84,11 @@ const Header = () => {
                     </nav>
 
                     <SearchBar/>
+
+                    <button type="button" className="menu-button">
+                        <span className="material-icons">menu</span>
+                        <span className="material-icons">close</span>
+                    </button>
                 </div>
             </div>
         </header>

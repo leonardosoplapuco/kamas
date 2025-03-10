@@ -471,7 +471,7 @@
         },
         {
             "id": 8,
-            "icon": "king_bed",
+            "icon": "sell",
             "category": "Ofertas",
             "headTitle": "Ofertas | Kamas",
             "route": "/productos/ofertas/"
