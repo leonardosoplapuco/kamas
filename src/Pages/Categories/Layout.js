@@ -47,6 +47,7 @@ function Layout() {
 
         Promise.all([
             fetch(`/assets/JSON/Productos/${capitalizedCategory}/Modelos/Adel.json`).then((res) => res.json()),
+            fetch(`/assets/JSON/Productos/${capitalizedCategory}/Modelos/Rucay.json`).then((res) => res.json()),
             fetch(`/assets/JSON/Productos/${capitalizedCategory}/Modelos/Sarki.json`).then((res) => res.json()),
         ])
             .then((data) => {
@@ -78,6 +79,11 @@ function Layout() {
                 <div className="block-container">
                     <div className="block-content">
                         <section className="category-container">
+
+                            <div className='leo'>
+                                <p>Ruta de la categoría</p>
+                            </div>
+
                             <div className="filters-container">
                                 <p>Filtrar por:</p>
                                 {filtros.map((filtro, index) => (
