@@ -9,7 +9,7 @@ const Header = () => {
     const [activeMenu, setActiveMenu] = useState(null);
 
     useEffect(() => {
-        fetch("/JSON/Categories.json")
+        fetch("/assets/JSON/Categories.json")
         .then((response) => response.json())
         .then((data) => setMenuData(data))
         .catch((error) => console.error("Error loading menu data:", error));

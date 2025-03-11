@@ -18,7 +18,7 @@ function Layout() {
 
   useEffect(() => {
     // Cargar metadata desde /public/JSON/Categories.json
-    fetch('/JSON/Categories.json')
+    fetch('/assets/JSON/Categories.json')
       .then((res) => res.json())
       .then((data) => {
         const found = data.Categories.find(
@@ -29,15 +29,15 @@ function Layout() {
       .catch((err) => console.error("Error al cargar Categories.json:", err));
 
     // Cargar filtros
-    fetch(`/JSON/Productos/${capitalizar(category)}/Filtros.json`)
+    fetch(`/assets/JSON/Productos/${capitalizar(category)}/Filtros.json`)
       .then((res) => res.json())
       .then((data) => setFiltros(data))
       .catch((err) => console.error("Error al cargar Filtros.json:", err));
 
     // Cargar productos (ejemplo usando 2 archivos)
     Promise.all([
-      fetch(`/JSON/Productos/${capitalizar(category)}/Modelos/Adel.json`).then((res) => res.json()),
-      fetch(`/JSON/Productos/${capitalizar(category)}/Modelos/Sarki.json`).then((res) => res.json()),
+      fetch(`/assets/JSON/Productos/${capitalizar(category)}/Modelos/Adel.json`).then((res) => res.json()),
+      fetch(`/assets/JSON/Productos/${capitalizar(category)}/Modelos/Sarki.json`).then((res) => res.json()),
       // Agrega más archivos según lo necesites
     ])
       .then((data) => {
