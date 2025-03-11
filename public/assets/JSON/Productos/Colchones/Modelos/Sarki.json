@@ -9,7 +9,17 @@
             "fotos": "/assets/images/productos/colchones/sarki/1-plaza-y-media/",
             "precio": 500,
             "stock": 99,
-            "sku": "K1153CN10"
+            "sku": "K1153CN10",
+            "descripcion":[
+                {
+                    "uno": "Garantía de 2 años.",
+                    "dos": "9 filas de resortes.",
+                    "tres": "Tela algodón tejido en punto.",
+                    "cuatro": "Espuma de alta densidad 18kg/m3.",
+                    "cinco": "Uso de ambos lados.",
+                    "seis": "Soporte de 65kg. por persona."
+                }
+            ]
         },
         {
             "id": 2,
@@ -20,17 +30,59 @@
             "fotos": "/assets/images/productos/colchones/sarki/2-plazas/",
             "precio": 500,
             "stock": 99,
-            "sku": "K123CN10"
-        }
-    ],
-    "descripcion":[
+            "sku": "K123CN10",
+            "descripcion":[
+                {
+                    "uno": "Garantía de 2 años.",
+                    "dos": "9 filas de resortes.",
+                    "tres": "Tela algodón tejido en punto.",
+                    "cuatro": "Espuma de alta densidad 18kg/m3.",
+                    "cinco": "Uso de ambos lados.",
+                    "seis": "Soporte de 65kg. por persona."
+                }
+            ]
+        },
         {
-            "uno": "Garantía de 2 años.",
-            "dos": "9 filas de resortes.",
-            "tres": "Tela algodón tejido en punto.",
-            "cuatro": "Espuma de alta densidad 18kg/m3.",
-            "cinco": "Uso de ambos lados.",
-            "seis": "Soporte de 65kg. por persona."
+            "id": 3,
+            "categoria": "Colchones",
+            "ruta": "/productos/colchones/sarki/queen",
+            "tamaño": "Queen",
+            "nombre": "Colchón kamas sarki queen",
+            "fotos": "/assets/images/productos/colchones/sarki/queen/",
+            "precio": 500,
+            "stock": 99,
+            "sku": "K133CN10",
+            "descripcion":[
+                {
+                    "uno": "Garantía de 2 años.",
+                    "dos": "9 filas de resortes.",
+                    "tres": "Tela algodón tejido en punto.",
+                    "cuatro": "Espuma de alta densidad 18kg/m3.",
+                    "cinco": "Uso de ambos lados.",
+                    "seis": "Soporte de 65kg. por persona."
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "categoria": "Colchones",
+            "ruta": "/productos/colchones/sarki/king",
+            "tamaño": "King",
+            "nombre": "Colchón kamas sarki king",
+            "fotos": "/assets/images/productos/colchones/sarki/king/",
+            "precio": 500,
+            "stock": 99,
+            "sku": "K143CN10",
+            "descripcion":[
+                {
+                    "uno": "Garantía de 2 años.",
+                    "dos": "9 filas de resortes.",
+                    "tres": "Tela algodón tejido en punto.",
+                    "cuatro": "Espuma de alta densidad 18kg/m3.",
+                    "cinco": "Uso de ambos lados.",
+                    "seis": "Soporte de 65kg. por persona."
+                }
+            ]
         }
     ],
     "detallesDelProducto":[
