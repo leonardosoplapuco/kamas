@@ -7,7 +7,8 @@
             "nombre": "Colchón kamas sarki 1 plaza y media",
             "tamaño": "1 plaza y media",
             "fotos": "/assets/images/productos/colchones/sarki/1-plaza-y-media/",
-            "precio": 500,
+            "precioNormal": 499,
+            "precioVenta": 319,
             "stock": 99,
             "sku": "K1153CN10",
             "descripcion":[
@@ -15,9 +16,10 @@
                     "uno": "Garantía de 2 años.",
                     "dos": "9 filas de resortes.",
                     "tres": "Tela algodón tejido en punto.",
-                    "cuatro": "Espuma de alta densidad 18kg/m3.",
-                    "cinco": "Uso de ambos lados.",
-                    "seis": "Soporte de 65kg. por persona."
+                    "cuatro": "Marco sellado",
+                    "cinco": "Espuma de alta densidad 18kg/m3",
+                    "seis": "Uso de ambos lados",
+                    "siete": "Soporte de 65kg. por persona."
                 }
             ]
         },
@@ -28,17 +30,19 @@
             "tamaño": "2 plazas",
             "nombre": "Colchón kamas sarki 2 plazas",
             "fotos": "/assets/images/productos/colchones/sarki/2-plazas/",
-            "precio": 500,
+            "precioNormal": 599,
+            "precioVenta": 399,
             "stock": 99,
             "sku": "K123CN10",
             "descripcion":[
                 {
                     "uno": "Garantía de 2 años.",
-                    "dos": "9 filas de resortes.",
+                    "dos": "13 filas de resortes.",
                     "tres": "Tela algodón tejido en punto.",
-                    "cuatro": "Espuma de alta densidad 18kg/m3.",
-                    "cinco": "Uso de ambos lados.",
-                    "seis": "Soporte de 65kg. por persona."
+                    "cuatro": "Marco sellado",
+                    "cinco": "Espuma de alta densidad 18kg/m3",
+                    "seis": "Uso de ambos lados",
+                    "siete": "Soporte de 75kg. por persona."
                 }
             ]
         },
@@ -49,17 +53,22 @@
             "tamaño": "Queen",
             "nombre": "Colchón kamas sarki queen",
             "fotos": "/assets/images/productos/colchones/sarki/queen/",
-            "precio": 500,
+            "precioNormal": 899,
+            "precioVenta": 599,
             "stock": 99,
             "sku": "K133CN10",
             "descripcion":[
                 {
                     "uno": "Garantía de 2 años.",
-                    "dos": "9 filas de resortes.",
+                    "dos": "16 filas de resortes.",
                     "tres": "Tela algodón tejido en punto.",
-                    "cuatro": "Espuma de alta densidad 18kg/m3.",
-                    "cinco": "Uso de ambos lados.",
-                    "seis": "Soporte de 65kg. por persona."
+                    "cuatro": "Marco sellado",
+                    "cinco": "Espuma de alta densidad 18kg/m3",
+                    "seis": "Uso de ambos lados",
+                    "siete": "Soporte de 80kg. por persona.",
+                    "ocho": "Refuerzos centrales",
+                    "nueve": "Resortes de acero templado",
+                    "diez": "26 cm. de grosor"
                 }
             ]
         },
@@ -70,17 +79,22 @@
             "tamaño": "King",
             "nombre": "Colchón kamas sarki king",
             "fotos": "/assets/images/productos/colchones/sarki/king/",
-            "precio": 500,
+            "precioNormal": 1099,
+            "precioVenta": 799,
             "stock": 99,
             "sku": "K143CN10",
             "descripcion":[
                 {
                     "uno": "Garantía de 2 años.",
-                    "dos": "9 filas de resortes.",
+                    "dos": "18 filas de resortes.",
                     "tres": "Tela algodón tejido en punto.",
-                    "cuatro": "Espuma de alta densidad 18kg/m3.",
-                    "cinco": "Uso de ambos lados.",
-                    "seis": "Soporte de 65kg. por persona."
+                    "cuatro": "Marco sellado",
+                    "cinco": "Espuma de alta densidad 18kg/m3",
+                    "seis": "Uso de ambos lados",
+                    "siete": "Soporte de 80kg. por persona.",
+                    "ocho": "Refuerzos centrales",
+                    "nueve": "Resortes de acero templado",
+                    "diez": "26 cm. de grosor"
                 }
             ]
         }
