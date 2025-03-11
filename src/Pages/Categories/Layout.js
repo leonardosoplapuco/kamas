@@ -13,19 +13,19 @@ function Layout(){
 
     const [meta, setMeta] = useState(null);
     const [filtros, setFiltros] = useState([]);
-    const [productos, setProductos] = useState([]);
+    const [productos, setproductos] = useState([]);
     const [selectedFilters, setSelectedFilters] = useState({});
     const [error, setError] = useState(null);
 
     useEffect(() => {
         if (!category){
-            setError("Error: Falta el parámetro 'category' en la URL.");
+                setError("Error: Falta el parámetro 'category' en la URL.");
             return;
         }
 
         setError(null);
 
-        fetch('/assets/JSON/Categories.json')
+        fetch('/assets/json/categories.json')
             .then((res) => res.json())
             .then((data) => {
                 const found = data.Categories.find(
@@ -38,7 +38,7 @@ function Layout(){
                 setError("No se pudo cargar la categoría.");
             });
 
-        fetch(`/assets/JSON/Productos/${capitalizedCategory}/Filtros.json`)
+        fetch(`/assets/json/productos/${capitalizedCategory}/Filtros.json`)
             .then((res) => res.json())
             .then((data) => setFiltros(data))
             .catch((err) => {
@@ -47,13 +47,13 @@ function Layout(){
             });
 
         Promise.all([
-            fetch(`/assets/JSON/Productos/${capitalizedCategory}/Modelos/Adel.json`).then((res) => res.json()),
-            fetch(`/assets/JSON/Productos/${capitalizedCategory}/Modelos/Rucay.json`).then((res) => res.json()),
-            fetch(`/assets/JSON/Productos/${capitalizedCategory}/Modelos/Sarki.json`).then((res) => res.json()),
+            fetch(`/assets/json/productos/${capitalizedCategory}/modelos/adel.json`).then((res) => res.json()),
+            fetch(`/assets/json/productos/${capitalizedCategory}/modelos/rucay.json`).then((res) => res.json()),
+            fetch(`/assets/json/productos/${capitalizedCategory}/modelos/sarki.json`).then((res) => res.json()),
         ])
             .then((data) => {
                 const allProducts = data.flatMap(file => file.productos);
-                setProductos(allProducts);
+                setproductos(allProducts);
             })
             .catch((err) => {
                 console.error("Error al cargar productos:", err);
