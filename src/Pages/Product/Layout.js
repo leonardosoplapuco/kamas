@@ -115,14 +115,14 @@ function ProductLayout() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const url = `/assets/JSON/Productos/${category}/Modelos/${product}.json`;
+                const url = `https://prototipo-kamas.vercel.app/assets/json/productos/${category}/modelos/${product}.json`;
+
                 console.log("🔍 Intentando cargar:", url);
-                
+
                 const response = await fetch(url);
 
-                // Verificamos si la respuesta es HTML en lugar de JSON
                 const text = await response.text();
-                console.log("📜 Respuesta obtenida:", text.slice(0, 100)); // Solo muestra los primeros 100 caracteres para revisar si es HTML
+                console.log("📜 Respuesta obtenida:", text.slice(0, 100));
 
                 if (text.startsWith("<!DOCTYPE html>")) {
                     throw new Error("El servidor está devolviendo HTML en lugar de JSON.");
@@ -167,7 +167,7 @@ function ProductLayout() {
                                     src={`${productData.fotos}1.jpg`} 
                                     alt={productData.nombre} 
                                     width="300" 
-                                    onError={(e) => e.target.src = "/assets/images/default-product.jpg"} // Imagen de respaldo si falla
+                                    onError={(e) => e.target.src = "/assets/images/default-product.jpg"}
                                 />
                             </div>
 

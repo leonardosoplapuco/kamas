@@ -1,21 +1,3 @@
-// import Header from "../../Componentes/Header/Header";
-
-// const Layout = ({ title, children }) => {
-//     return(
-//         <>
-//             <head>
-//                 <title>{title}</title>
-//             </head>
-
-//             <Header />
-
-//             <main>{children}</main>
-//         </>
-//     );
-// };
-
-// export default Layout;
-
 import { Helmet } from "react-helmet-async";
 
 import Header from "../../Componentes/Header/Header";
