@@ -1,0 +1,110 @@
+{
+    "productos":[
+        {
+            "id": 1,
+            "categoria": "Colchones",
+            "ruta": "/productos/colchones/rucay/1-plaza-y-media",
+            "nombre": "Colchón kamas rucay 1 plaza y media",
+            "tamaño": "1 plaza y media",
+            "fotos": "/assets/images/productos/colchones/rucay/1-plaza-y-media/",
+            "precioNormal": 449,
+            "precioVenta": 289,
+            "stock": 99,
+            "sku": "K1152CN10",
+            "descripcion":[
+                {
+                    "uno": "Garantía de 1 año.",
+                    "dos": "8 filas de resortes en forma vertical.",
+                    "tres": "Tela algodón tejido en punto",
+                    "cuatro": "Espuma de alta densidad 16kg/m3.",
+                    "cinco": "Marco sellado",
+                    "seis": "Uso de un solo lado",
+                    "siete": "Soporte de 60kg. por persona"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "categoria": "Colchones",
+            "ruta": "/productos/colchones/rucay/2-plazas",
+            "tamaño": "2 plazas",
+            "nombre": "Colchón kamas rucay 2 plazas",
+            "fotos": "/assets/images/productos/colchones/rucay/2-plazas/",
+            "precioNormal": 499,
+            "precioVenta": 349,
+            "stock": 99,
+            "sku": "K122CN10",
+            "descripcion":[
+                {
+                    "uno": "Garantía de 1 año.",
+                    "dos": "12 filas de resortes en forma vertical.",
+                    "tres": "Tela algodón tejido en punto",
+                    "cuatro": "Espuma de alta densidad 16kg/m3.",
+                    "cinco": "Marco sellado",
+                    "seis": "Uso de un solo lado",
+                    "siete": "Soporte de 70kg. por persona"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "categoria": "Colchones",
+            "ruta": "/productos/colchones/rucay/queen",
+            "tamaño": "Queen",
+            "nombre": "Colchón kamas rucay queen",
+            "fotos": "/assets/images/productos/colchones/rucay/queen/",
+            "precioNormal": 679,
+            "precioVenta": 549,
+            "stock": 99,
+            "sku": "K132CN10",
+            "descripcion":[
+                {
+                    "uno": "Garantía de 1 año.",
+                    "dos": "15 filas de resortes en forma vertical.",
+                    "tres": "Tela algodón tejido en punto",
+                    "cuatro": "Espuma de alta densidad 16kg/m3.",
+                    "cinco": "Marco sellado",
+                    "seis": "Uso de un solo lado",
+                    "siete": "Soporte de 70kg. por persona",
+                    "ocho": "Refuerzos centrales",
+                    "nueve": "25cm. de grosor",
+                    "diez": "Resortes de acero templado"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "categoria": "Colchones",
+            "ruta": "/productos/colchones/rucay/king",
+            "tamaño": "King",
+            "nombre": "Colchón kamas rucay king",
+            "fotos": "/assets/images/productos/colchones/rucay/king/",
+            "precioNormal": 899,
+            "precioVenta": 699,
+            "stock": 99,
+            "sku": "K142CM10",
+            "descripcion":[
+                {
+                    "uno": "Garantía de 1 año.",
+                    "dos": "17 filas de resortes en forma vertical.",
+                    "tres": "Tela algodón tejido en punto",
+                    "cuatro": "Espuma de alta densidad 16kg/m3.",
+                    "cinco": "Marco sellado",
+                    "seis": "Uso de un solo lado",
+                    "siete": "Soporte de 70kg. por persona",
+                    "ocho": "Refuerzos centrales",
+                    "nueve": "25cm. de grosor",
+                    "diez": "Resortes de acero templado"
+                }
+            ]
+        }
+    ],
+    "detallesDelProducto":[
+        {
+            "modeloColhon": "Rucay",
+            "lineaColchones": "Anátomico",
+            "nivelDeConfort": "Confortable",
+            "tipoDeResorte": "Bonell"
+        }
+    ]
+}
