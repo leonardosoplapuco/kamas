@@ -1,7 +1,33 @@
 [
     {
         "id": 1,
-        "name": "Lína de colchones",
+        "name": "Tamaño",
+        "list":[
+            {
+                "id": 1,
+                "name": "1 plaza"
+            },
+            {
+                "id": 2,
+                "name": "1 plaza y media"
+            },
+            {
+                "id": 3,
+                "name": "2 plazas"
+            },
+            {
+                "id": 4,
+                "name": "Queen"
+            },
+            {
+                "id": 5,
+                "name": "King"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Línea de colchones",
         "list":[
             {
                 "id": 1,
@@ -9,7 +35,7 @@
             },
             {
                 "id": 2,
-                "name": "Anatómicos"
+                "name": "Anátomicos"
             },
             {
                 "id": 3,

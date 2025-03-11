@@ -7,17 +7,18 @@ import Footer from '../../Componentes/Footer/Footer';
 
 import './Layout.css';
 
-function Layout() {
+function Layout(){
     const { category } = useParams();
     const capitalizedCategory = category ? category.charAt(0).toUpperCase() + category.slice(1) : '';
 
     const [meta, setMeta] = useState(null);
     const [filtros, setFiltros] = useState([]);
     const [productos, setProductos] = useState([]);
+    const [selectedFilters, setSelectedFilters] = useState({});
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        if (!category) {
+        if (!category){
             setError("Error: Falta el parámetro 'category' en la URL.");
             return;
         }
@@ -61,6 +62,37 @@ function Layout() {
 
     }, [category, capitalizedCategory]);
 
+    const handleFilterChange = (category, value) => {
+        setSelectedFilters((prev) => {
+            const newFilters = { ...prev };
+
+            if (!newFilters[category]) {
+                newFilters[category] = [];
+            }
+
+            if (newFilters[category].includes(value)) {
+                newFilters[category] = newFilters[category].filter((item) => item !== value);
+            } else {
+                newFilters[category].push(value);
+            }
+
+            return newFilters;
+        });
+    };
+
+    const filteredProducts = productos.filter((producto) => {
+        return Object.entries(selectedFilters).every(([category, values]) => {
+            if (values.length === 0) return true;
+
+            if (category === "Tamaño") return values.includes(producto.detallesDelProducto?.tamaño);
+            if (category === "Línea de colchones") return values.includes(producto.detallesDelProducto?.lineaColchones);
+            if (category === "Nivel de confort") return values.includes(producto.detallesDelProducto?.nivelDeConfort);
+            if (category === "Tipo de resorte") return values.includes(producto.detallesDelProducto?.tipoDeResorte);
+
+            return true;
+        });
+    });
+
     if (error) {
         return <div className="error-message">{error}</div>;
     }
@@ -92,7 +124,7 @@ function Layout() {
                                         <ul>
                                             {filtro.list.map((item, i) => (
                                                 <li key={`item-${filtro.id}-${i}`}>
-                                                    <input type="checkbox"></input>
+                                                    <input type="checkbox" checked={selectedFilters[filtro.name]?.includes(item.name) || false} onChange={() => handleFilterChange(filtro.name, item.name)}/>
                                                     <p>{item.name}</p>
                                                 </li>
                                             ))}
@@ -102,23 +134,23 @@ function Layout() {
                             </div>
 
                             <div className="products">
-                                {productos.map((producto, index) => {
-                                    const uniqueKey = producto.id 
-                                    ? `producto-${producto.id}-${index}`
-                                    : `producto-${index}-${new Date().getTime()}`;
+                                {filteredProducts.map((producto, index) => {
+                                    const uniqueKey = producto.id
+                                        ? `producto-${producto.id}-${index}`
+                                        : `producto-${index}-${new Date().getTime()}`;
 
                                     const precioNormal = producto.precioNormal || 0;
                                     const precioVenta = producto.precioVenta || 0;
 
                                     const descuento = (precioNormal > 0 && precioVenta > 0)
-                                    ? Math.round(((precioNormal - precioVenta) * 100) / precioNormal)
-                                    : 0;
+                                        ? Math.round(((precioNormal - precioVenta) * 100) / precioNormal)
+                                        : 0;
 
-                                    return(
+                                    return (
                                         <a href={producto.ruta} key={uniqueKey} className="product">
                                             <div className='product-images'>
-                                                <img src={`${producto.fotos}1.jpg`} alt={producto.nombre} className='product-image product-image-1'/>
-                                                <img src={`${producto.fotos}2.jpg`} alt={producto.nombre} className='product-image product-image-2'/>
+                                                <img src={`${producto.fotos}1.jpg`} alt={producto.nombre} className='product-image product-image-1' />
+                                                <img src={`${producto.fotos}2.jpg`} alt={producto.nombre} className='product-image product-image-2' />
                                                 <span className='product-label-discount'>-{descuento}%</span>
                                             </div>
                                             <div className='product-description'>

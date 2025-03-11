@@ -4,6 +4,7 @@ header{
     left: 0;
     top: 0;
     background: var(--header);
+    box-shadow: 0 2.5px 5px rgba(0 0 0 / 0.15);
     z-index: 100;
 }
 
@@ -270,15 +271,19 @@ header{
     }
     .menu-container{
         position: fixed;
-        left: 0;
+        left: 100%;
         top: 120px;
         width: 100%;
         height: calc(100vh - 106px);
         overflow-y: auto;
+        transition: var(--t-200ms);
         background: var(--header);
     }
     .menu-container::-webkit-scrollbar{
         display: none;
+    }
+    .menu-container.active{
+        left: 0;
     }
     .menu{
         width: 100%;
@@ -327,7 +332,13 @@ header{
         top: 50%;
         right: 20px;
         translate: 0 -50%;
+        transition: var(--t-200ms);
+        color: var(--text);
         rotate: 90deg;
+    }
+    .menu-link.active::before{
+        rotate: -90deg;
+        color: var(--white);
     }
     .submenu-container{
         position: unset;
