@@ -115,7 +115,7 @@ function ProductLayout() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const url = `https://prototipo-kamas.vercel.app/assets/json/productos/${category}/modelos/${product}.json`;
+                const url = `/assets/json/productos/${category}/modelos/${product}.json`;
 
                 console.log("🔍 Intentando cargar:", url);
 
